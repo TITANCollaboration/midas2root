@@ -26,6 +26,7 @@ include_directories($ENV{ROOTANASYS}/include $ENV{ROOTSYS}/include $ENV{MIDASSYS
 link_directories($ENV{ROOTANASYS}/libAnalyzer)
 link_directories($ENV{ROOTANASYS}/lib)
 link_directories($ENV{ROOTSYS}/lib)
+
 set(LIBS $ENV{ROOTANASYS}/lib/librootana.a XMLParser $ENV{ROOTSYS}/lib/libGui.so $ENV{ROOTSYS}/lib/libRHTTP.so Z $ENV{MIDASSYS}/lib/libmidas.a ${ROOT_LIBRARIES} $ENV{ROOTANASYS}/libAnalyzer/libAnalyzer.a)
 
 target_link_libraries(Midas2Root_mdpp16 ${LIBS})
